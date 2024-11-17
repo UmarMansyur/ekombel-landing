@@ -104,7 +104,7 @@
         <div class="absolute inset-0 bg-white/10"></div>
         <div class="lg:px-20 px-10 mx-auto pt-10 relative">
           <span class="text-pink-500 text-sm">#Nilai Ekombel</span>
-          <h1 class="text-2xl font-bold text-gray-800">Poin Poin Nilai Pengembangan <br> Komunitas Belajar Mini</h1>
+          <h1 class="text-2xl font-bold text-gray-800">Nilai Pengembangan <br> Komunitas Belajar Mini</h1>
           <p class="text-sm text-gray-600 md:w-1/3 mt-5">
             Nilai-nilai penting yang dapat dikembangkan dalam komunitas belajar mini produktif sebagai berikut:
           </p>
