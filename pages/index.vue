@@ -27,7 +27,7 @@
       <div class="flex justify-between items-center">
         <div class="flex items-center h-10 w-10 p-0.5 border border-pink-500 rounded-full gap-x-2">
           <img src="~/assets/images/ekombel.jpeg" alt="Logo Universitas Madura" class="w-10 h-auto rounded-full">
-          <h1 class="text-pink-500 font-bold text-xl">E-kombel</h1>
+          <h1 class="text-pink-500 font-bold text-xl text-nowrap">E-kombel</h1>
         </div>
         <button class="text-pink-600" @click="toggleMenu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
@@ -41,9 +41,9 @@
           <li><a href="#nilai-ekombel" class="text-pink-600">Nilai Ekombel</a></li>
           <li><a href="#tentang-kami" class="text-pink-600">Tentang Kami</a></li>
           <li><a href="#testimoni" class="text-pink-600">Testimoni</a></li>
-          <li>
+          <li class="w-full">
             <a href="https://ekombel.madurainstitute.org/login"
-              class="bg-gradient-to-tl from-pink-600 to-violet-600 text-white px-4 py-2 rounded-md w-full"
+              class="bg-gradient-to-tl from-pink-600 to-violet-600 text-white px-4 py-2.5 rounded-md w-full block text-center"
               target="_blank">
               Login
             </a>
@@ -84,10 +84,11 @@
           </p>
         </div>
         <div class="mt-8 gap-3 flex justify-center">
-          <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-pink-600 to-violet-600 hover:from-violet-600 hover:to-pink-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:from-violet-600 focus:to-pink-600 py-3 px-4 shadow-lg shadow-pink-600/20"
+          <a class="relative inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-pink-600 to-violet-600 hover:from-violet-600 hover:to-pink-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:from-violet-600 focus:to-pink-600 py-3 px-4 shadow-lg shadow-pink-600/20 animate-shimmer-button overflow-hidden"
             href="https://ekombel.madurainstitute.org/login" target="_blank">
-            Mulai Belajar
-            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            <span class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/30 to-transparent shimmer-diagonal"></span>
+            <span class="relative">Mulai Belajar</span>
+            <svg class="shrink-0 size-4 relative" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="m9 18 6-6-6-6" />
             </svg>
@@ -656,5 +657,18 @@ const teams2 = [
   animation: shimmer 15s ease-in-out infinite;
   background-size: 200% auto;
   opacity: 0.95;
+}
+
+@keyframes shimmer-diagonal {
+  0% {
+    transform: translateX(-100%) translateY(100%);
+  }
+  100% {
+    transform: translateX(100%) translateY(-100%);
+  }
+}
+
+.shimmer-diagonal {
+  animation: shimmer-diagonal 2s infinite;
 }
 </style>
