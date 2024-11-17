@@ -27,7 +27,7 @@
       <div class="flex justify-between items-center">
         <div class="flex items-center h-10 w-10 p-0.5 border border-pink-500 rounded-full gap-x-2">
           <img src="~/assets/images/ekombel.jpeg" alt="Logo Universitas Madura" class="w-10 h-auto rounded-full">
-          <h1 class="text-pink-500 font-bold text-xl">Ekombel</h1>
+          <h1 class="text-pink-500 font-bold text-xl">E-kombel</h1>
         </div>
         <button class="text-pink-600" @click="toggleMenu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
@@ -72,9 +72,9 @@
         </div>
         <div class="mt-5 max-w-2xl text-center mx-auto">
           <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
-            Elektronik Komunitas
-            <span class="bg-clip-text bg-gradient-to-tl from-pink-600 to-violet-600 text-transparent">Belajar
-              Mini</span>
+            <span class="bg-clip-text bg-gradient-to-r from-pink-500 via-white to-violet-600 text-transparent animate-shimmer">E-Komunitas Belajar </span>
+
+            <span class="bg-clip-text bg-gradient-to-r from-pink-500 via-white to-violet-600 text-transparent animate-shimmer">Mini Produktif</span>
           </h1>
         </div>
         <div class="mt-5 max-w-3xl text-center mx-auto">
@@ -641,3 +641,20 @@ const teams2 = [
 
 
 </script>
+
+<style scoped>
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 15s ease-in-out infinite;
+  background-size: 200% auto;
+  opacity: 0.95;
+}
+</style>
